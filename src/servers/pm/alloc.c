@@ -31,6 +31,8 @@
 
 #define NIL_HOLE (struct hole *) 0
 
+// this is a comment
+
 PRIVATE struct hole hole[_NR_HOLES];
 PRIVATE u32_t high_watermark = 0;
 
@@ -113,7 +115,7 @@ phys_clicks clicks;		/* number of clicks to free */
   register struct hole *hp, *new_ptr, *prev_ptr;
 
   if (clicks == 0) return;
-  if ( (new_ptr = free_slots) == NIL_HOLE) 
+  if ( (new_ptr = free_slots) == NIL_HOLE)
   	panic(__FILE__,"hole table full", NO_NUM);
   new_ptr->h_base = base;
   new_ptr->h_len = clicks;
@@ -152,7 +154,7 @@ PRIVATE void del_slot(prev_ptr, hp)
 /* pointer to hole entry just ahead of 'hp' */
 register struct hole *prev_ptr;
 /* pointer to hole entry to be removed */
-register struct hole *hp;	
+register struct hole *hp;
 {
 /* Remove an entry from the hole list.  This procedure is called when a
  * request to allocate memory removes a hole in its entirety, thus reducing
@@ -238,7 +240,7 @@ phys_clicks *free;		/* memory size summaries */
 		free_mem(chunks[i].base, chunks[i].size);
 		*free += chunks[i].size;
 #if ENABLE_SWAP
-		if (swap_base < chunks[i].base + chunks[i].size) 
+		if (swap_base < chunks[i].base + chunks[i].size)
 			swap_base = chunks[i].base + chunks[i].size;
 #endif
 	}
@@ -334,7 +336,7 @@ register struct mproc *rmp;		/* process to add to the queue */
 
   if (rmp->mp_flags & SWAPIN) return;	/* already queued */
 
-  
+
   for (pmp = &in_queue; *pmp != NULL; pmp = &(*pmp)->mp_swapq) {}
   *pmp = rmp;
   rmp->mp_swapq = NULL;
@@ -372,7 +374,7 @@ PUBLIC void swap_in()
 		/* We've found memory.  Update map and swap in. */
 		old_base = rmp->mp_seg[D].mem_phys;
 		rmp->mp_seg[D].mem_phys = new_base;
-		rmp->mp_seg[S].mem_phys = rmp->mp_seg[D].mem_phys + 
+		rmp->mp_seg[S].mem_phys = rmp->mp_seg[D].mem_phys +
 			(rmp->mp_seg[S].mem_vir - rmp->mp_seg[D].mem_vir);
 		sys_newmap(rmp->mp_endpoint, rmp->mp_seg);
 		off = swap_offset + ((off_t) (old_base-swap_base)<<CLICK_SHIFT);
@@ -430,7 +432,7 @@ PRIVATE int swap_out()
 	rw_seg(1, swap_fd, rmp->mp_endpoint, D, (phys_bytes)size << CLICK_SHIFT);
 	old_base = rmp->mp_seg[D].mem_phys;
 	rmp->mp_seg[D].mem_phys = new_base;
-	rmp->mp_seg[S].mem_phys = rmp->mp_seg[D].mem_phys + 
+	rmp->mp_seg[S].mem_phys = rmp->mp_seg[D].mem_phys +
 		(rmp->mp_seg[S].mem_vir - rmp->mp_seg[D].mem_vir);
 	sys_newmap(rmp->mp_endpoint, rmp->mp_seg);
 	free_mem(old_base, size);
