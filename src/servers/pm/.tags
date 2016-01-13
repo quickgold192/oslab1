@@ -1,0 +1,259 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+NIL_HOLE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^#define NIL_HOLE /;"	macro	line:32	file:
+hole	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE struct hole hole[_NR_HOLES];$/;"	variable	line:34	typeref:struct:hole
+high_watermark	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE u32_t high_watermark = 0;$/;"	variable	line:35
+hole_head	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE struct hole *hole_head;	\/* pointer to first hole *\/$/;"	variable	line:37	typeref:struct:hole
+free_slots	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE struct hole *free_slots;\/* ptr to list of unused table slots *\/$/;"	variable	line:38	typeref:struct:hole
+swap_fd	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE int swap_fd = -1;	\/* file descriptor of open swap file\/device *\/$/;"	variable	line:40
+swap_offset	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE u32_t swap_offset;	\/* offset to start of swap area on swap file *\/$/;"	variable	line:41
+swap_base	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE phys_clicks swap_base;	\/* memory offset chosen as swap base *\/$/;"	variable	line:42
+swap_maxsize	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE phys_clicks swap_maxsize;\/* maximum amount of swap "memory" possible *\/$/;"	variable	line:43
+in_queue	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE struct mproc *in_queue;	\/* queue of processes wanting to swap in *\/$/;"	variable	line:44	typeref:struct:mproc
+outswap	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE struct mproc *outswap = &mproc[0]; 	 \/* outswap candidate? *\/$/;"	variable	line:45	typeref:struct:mproc
+swap_base	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^#define swap_base /;"	macro	line:47	file:
+swap_out	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^#define swap_out(/;"	macro	line:55	file:
+alloc_mem	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC phys_clicks alloc_mem(clicks)$/;"	function	line:61
+free_mem	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC void free_mem(base, clicks)$/;"	function	line:104
+del_slot	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE void del_slot(prev_ptr, hp)$/;"	function	line:151
+merge	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE void merge(hp)$/;"	function	line:175
+mem_init	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC void mem_init(chunks, free)$/;"	function	line:209
+mem_holes_copy	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC int mem_holes_copy(struct hole *holecopies, size_t *bytes, u32_t *hi)$/;"	function	line:259	signature:(struct hole *holecopies, size_t *bytes, u32_t *hi)
+swap_on	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC int swap_on(file, offset, size)$/;"	function	line:272
+swap_off	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC int swap_off()$/;"	function	line:292
+swap_inqueue	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC void swap_inqueue(rmp)$/;"	function	line:326
+swap_in	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PUBLIC void swap_in()$/;"	function	line:347
+swap_out	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/alloc.c	/^PRIVATE int swap_out()$/;"	function	line:392
+DATA_CHANGED	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/break.c	/^#define DATA_CHANGED /;"	macro	line:23	file:
+STACK_CHANGED	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/break.c	/^#define STACK_CHANGED /;"	macro	line:24	file:
+do_brk	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/break.c	/^PUBLIC int do_brk()$/;"	function	line:29
+adjust	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/break.c	/^PUBLIC int adjust(rmp, data_clicks, sp)$/;"	function	line:62
+SAFETY_BYTES	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/break.c	/^#define SAFETY_BYTES /;"	macro	line:94	file:
+SAFETY_CLICKS	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/break.c	/^#define SAFETY_CLICKS /;"	macro	line:95	file:
+size_ok	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/break.c	/^PUBLIC int size_ok(file_type, tc, dc, sc, dvir, s_vir)$/;"	function	line:144
+NO_MEM	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/const.h	/^#define NO_MEM /;"	macro	line:3
+PAGE_SIZE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/const.h	/^#define PAGE_SIZE	/;"	macro	line:10
+MAX_PAGES	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/const.h	/^#define MAX_PAGES /;"	macro	line:11
+NR_PIDS	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/const.h	/^#define NR_PIDS	/;"	macro	line:14
+PM_PID	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/const.h	/^#define PM_PID	/;"	macro	line:19
+INIT_PID	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/const.h	/^#define INIT_PID	/;"	macro	line:20
+ESCRIPT	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^#define ESCRIPT	/;"	macro	line:43	file:
+PTRSIZE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^#define PTRSIZE	/;"	macro	line:44	file:
+do_exec	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PUBLIC int do_exec()$/;"	function	line:49
+read_header	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PRIVATE int read_header(fd, ft, text_bytes, data_bytes, bss_bytes, $/;"	function	line:193
+new_mem	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PRIVATE int new_mem(sh_mp, text_bytes, data_bytes,$/;"	function	line:293
+patch_ptr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PRIVATE void patch_ptr(stack, base)$/;"	function	line:397
+insert_arg	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PRIVATE int insert_arg(stack, stk_bytes, arg, replace)$/;"	function	line:429
+patch_stack	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PRIVATE char *patch_stack(fd, stack, stk_bytes, script)$/;"	function	line:485
+rw_seg	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PUBLIC void rw_seg(rw, fd, proc_e, seg, seg_bytes0)$/;"	function	line:531
+PM_CHUNK_SIZE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^#define PM_CHUNK_SIZE /;"	macro	line:567	file:
+find_share	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/exec.c	/^PUBLIC struct mproc *find_share(mp_ign, ino, dev, ctime)$/;"	function	line:583
+LAST_FEW	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/forkexit.c	/^#define LAST_FEW /;"	macro	line:25	file:
+do_fork	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/forkexit.c	/^PUBLIC int do_fork()$/;"	function	line:32
+do_pm_exit	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/forkexit.c	/^PUBLIC int do_pm_exit()$/;"	function	line:126
+pm_exit	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/forkexit.c	/^PUBLIC void pm_exit(rmp, exit_status)$/;"	function	line:138
+do_waitpid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/forkexit.c	/^PUBLIC int do_waitpid()$/;"	function	line:228
+cleanup	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/forkexit.c	/^PRIVATE void cleanup(child)$/;"	function	line:290
+do_getset	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/getset.c	/^PUBLIC int do_getset()$/;"	function	line:17
+EXTERN	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^#undef EXTERN$/;"	macro	line:3
+EXTERN	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^#define EXTERN$/;"	macro	line:4
+mp	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN struct mproc *mp;	\/* ptr to 'mproc' slot of current process *\/$/;"	variable	line:8	typeref:struct:mproc
+procs_in_use	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN int procs_in_use;	\/* how many processes are marked as IN_USE *\/$/;"	variable	line:9
+monitor_params	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN char monitor_params[128*sizeof(char *)];	\/* boot monitor parameters *\/$/;"	variable	line:10
+kinfo	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN struct kinfo kinfo;	\/* kernel information *\/$/;"	variable	line:11	typeref:struct:kinfo
+m_in	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN message m_in;		\/* the incoming message itself is kept here. *\/$/;"	variable	line:14
+who_p	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN int who_p, who_e;	\/* caller's proc number, endpoint *\/$/;"	variable	line:15
+who_e	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN int who_p, who_e;	\/* caller's proc number, endpoint *\/$/;"	variable	line:15
+call_nr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN int call_nr;		\/* system call number *\/$/;"	variable	line:16
+core_sset	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN sigset_t core_sset;	\/* which signals cause core images *\/$/;"	variable	line:20
+ign_sset	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/glo.h	/^EXTERN sigset_t ign_sset;	\/* which signals are by default ignored *\/$/;"	variable	line:21
+click_to_round_k	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^#define click_to_round_k(/;"	macro	line:38	file:
+main	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PUBLIC int main()$/;"	function	line:44
+get_work	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PRIVATE void get_work()$/;"	function	line:106
+setreply	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PUBLIC void setreply(proc_nr, result)$/;"	function	line:130
+pm_init	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PRIVATE void pm_init()$/;"	function	line:153
+get_nice_value	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PRIVATE int get_nice_value(queue)$/;"	function	line:303
+MAX_REAL	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^#define MAX_REAL	/;"	macro	line:323	file:
+MAX_16BIT	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^#define MAX_16BIT	/;"	macro	line:324	file:
+get_mem_chunks	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PRIVATE void get_mem_chunks(mem_chunks)$/;"	function	line:330
+patch_mem_chunks	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PRIVATE void patch_mem_chunks(mem_chunks, map_ptr)$/;"	function	line:393
+PAGE_SIZE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^#define PAGE_SIZE	/;"	macro	line:412	file:
+PAGE_TABLE_COVER	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^#define PAGE_TABLE_COVER /;"	macro	line:413	file:
+do_x86_vm	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/main.c	/^PRIVATE void do_x86_vm(mem_chunks)$/;"	function	line:417
+SERVER	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^SERVER = pm$/;"	macro	line:2
+u	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^u = \/usr$/;"	macro	line:5
+i	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^i = $u\/include$/;"	macro	line:6
+s	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^s = $i\/sys$/;"	macro	line:7
+h	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^h = $i\/minix$/;"	macro	line:8
+k	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^k = $u\/src\/kernel$/;"	macro	line:9
+CC	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^CC =	exec cc$/;"	macro	line:12
+CFLAGS	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^CFLAGS = -I$i$/;"	macro	line:13
+LDFLAGS	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^LDFLAGS = -i$/;"	macro	line:14
+OBJ	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/Makefile	/^OBJ = 	main.o forkexit.o break.o exec.o time.o timers.o \\$/;"	macro	line:16
+do_allocmem	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_allocmem()$/;"	function	line:31
+do_freemem	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_freemem()$/;"	function	line:46
+do_procstat	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_procstat()$/;"	function	line:60
+do_getsysinfo	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_getsysinfo()$/;"	function	line:81
+do_getprocnr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_getprocnr()$/;"	function	line:140
+do_reboot	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_reboot()$/;"	function	line:180
+do_getsetpriority	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_getsetpriority()$/;"	function	line:224
+do_svrctl	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC int do_svrctl()$/;"	function	line:269
+MAX_LOCAL_PARAMS	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^#define MAX_LOCAL_PARAMS /;"	macro	line:273	file:
+_read_pm	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC ssize_t _read_pm(fd, buffer, nbytes, seg, ep)$/;"	function	line:393
+_write_pm	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/misc.c	/^PUBLIC ssize_t _write_pm(fd, buffer, nbytes, seg, ep)$/;"	function	line:413
+mproc	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^EXTERN struct mproc {$/;"	struct	line:9
+mp_seg	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  struct mem_map mp_seg[NR_LOCAL_SEGS]; \/* points to text, data, stack *\/$/;"	member	line:10	struct:mproc	typeref:struct:mproc::mem_map
+mp_exitstatus	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  char mp_exitstatus;		\/* storage for status when process exits *\/$/;"	member	line:11	struct:mproc
+mp_sigstatus	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  char mp_sigstatus;		\/* storage for signal # for killed procs *\/$/;"	member	line:12	struct:mproc
+mp_pid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  pid_t mp_pid;			\/* process id *\/$/;"	member	line:13	struct:mproc
+mp_endpoint	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  int mp_endpoint;		\/* kernel endpoint id *\/$/;"	member	line:14	struct:mproc
+mp_procgrp	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  pid_t mp_procgrp;		\/* pid of process group (used for signals) *\/$/;"	member	line:15	struct:mproc
+mp_wpid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  pid_t mp_wpid;		\/* pid this process is waiting for *\/$/;"	member	line:16	struct:mproc
+mp_parent	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  int mp_parent;		\/* index of parent process *\/$/;"	member	line:17	struct:mproc
+mp_child_utime	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  clock_t mp_child_utime;	\/* cumulative user time of children *\/$/;"	member	line:20	struct:mproc
+mp_child_stime	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  clock_t mp_child_stime;	\/* cumulative sys time of children *\/$/;"	member	line:21	struct:mproc
+mp_realuid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  uid_t mp_realuid;		\/* process' real uid *\/$/;"	member	line:24	struct:mproc
+mp_effuid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  uid_t mp_effuid;		\/* process' effective uid *\/$/;"	member	line:25	struct:mproc
+mp_realgid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  gid_t mp_realgid;		\/* process' real gid *\/$/;"	member	line:26	struct:mproc
+mp_effgid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  gid_t mp_effgid;		\/* process' effective gid *\/$/;"	member	line:27	struct:mproc
+mp_ino	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  ino_t mp_ino;			\/* inode number of file *\/$/;"	member	line:30	struct:mproc
+mp_dev	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  dev_t mp_dev;			\/* device number of file system *\/$/;"	member	line:31	struct:mproc
+mp_ctime	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  time_t mp_ctime;		\/* inode changed time *\/$/;"	member	line:32	struct:mproc
+mp_ignore	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  sigset_t mp_ignore;		\/* 1 means ignore the signal, 0 means don't *\/$/;"	member	line:35	struct:mproc
+mp_catch	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  sigset_t mp_catch;		\/* 1 means catch the signal, 0 means don't *\/$/;"	member	line:36	struct:mproc
+mp_sig2mess	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  sigset_t mp_sig2mess;		\/* 1 means transform into notify message *\/$/;"	member	line:37	struct:mproc
+mp_sigmask	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  sigset_t mp_sigmask;		\/* signals to be blocked *\/$/;"	member	line:38	struct:mproc
+mp_sigmask2	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  sigset_t mp_sigmask2;		\/* saved copy of mp_sigmask *\/$/;"	member	line:39	struct:mproc
+mp_sigpending	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  sigset_t mp_sigpending;	\/* pending signals to be handled *\/$/;"	member	line:40	struct:mproc
+mp_sigact	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  struct sigaction mp_sigact[_NSIG + 1]; \/* as in sigaction(2) *\/$/;"	member	line:41	struct:mproc	typeref:struct:mproc::sigaction
+mp_sigreturn	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  vir_bytes mp_sigreturn; 	\/* address of C library __sigreturn function *\/$/;"	member	line:42	struct:mproc
+mp_timer	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  struct timer mp_timer;	\/* watchdog timer for alarm(2) *\/$/;"	member	line:43	struct:mproc	typeref:struct:mproc::timer
+mp_func	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  sighandler_t mp_func;		\/* all sigs vectored to a single user fcn *\/$/;"	member	line:46	struct:mproc
+mp_flags	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  unsigned mp_flags;		\/* flag bits *\/$/;"	member	line:48	struct:mproc
+mp_procargs	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  vir_bytes mp_procargs;        \/* ptr to proc's initial stack arguments *\/$/;"	member	line:49	struct:mproc
+mp_swapq	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  struct mproc *mp_swapq;	\/* queue of procs waiting to be swapped in *\/$/;"	member	line:50	struct:mproc	typeref:struct:mproc::mproc
+mp_reply	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  message mp_reply;		\/* reply message to be sent to one *\/$/;"	member	line:51	struct:mproc
+mp_nice	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  signed int mp_nice;		\/* nice is PRIO_MIN..PRIO_MAX, standard 0. *\/$/;"	member	line:54	struct:mproc
+mp_name	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^  char mp_name[PROC_NAME_LEN];	\/* process name *\/$/;"	member	line:56	struct:mproc
+mproc	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^} mproc[NR_PROCS];$/;"	variable	line:57	typeref:struct:mproc
+IN_USE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define IN_USE /;"	macro	line:60
+WAITING	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define WAITING /;"	macro	line:61
+ZOMBIE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define ZOMBIE /;"	macro	line:62
+PAUSED	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define PAUSED /;"	macro	line:63
+ALARM_ON	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define ALARM_ON /;"	macro	line:64
+SEPARATE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define SEPARATE	/;"	macro	line:65
+TRACED	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define	TRACED	/;"	macro	line:66
+STOPPED	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define STOPPED	/;"	macro	line:67
+SIGSUSPENDED	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define SIGSUSPENDED /;"	macro	line:68
+REPLY	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define REPLY	/;"	macro	line:69
+ONSWAP	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define ONSWAP	/;"	macro	line:70
+SWAPIN	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define SWAPIN	/;"	macro	line:71
+DONT_SWAP	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define DONT_SWAP /;"	macro	line:72
+PRIV_PROC	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define PRIV_PROC /;"	macro	line:73
+NIL_MPROC	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/mproc.h	/^#define NIL_MPROC /;"	macro	line:75
+addr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define addr /;"	macro	line:2
+exec_name	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define exec_name	/;"	macro	line:3
+exec_len	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define exec_len	/;"	macro	line:4
+func	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define func	/;"	macro	line:5
+grp_id	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define grp_id	/;"	macro	line:6
+namelen	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define namelen	/;"	macro	line:7
+pid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define pid	/;"	macro	line:8
+endpt	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define endpt	/;"	macro	line:9
+pendpt	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define pendpt	/;"	macro	line:10
+seconds	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define seconds	/;"	macro	line:11
+sig	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig	/;"	macro	line:12
+stack_bytes	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define stack_bytes	/;"	macro	line:13
+stack_ptr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define stack_ptr	/;"	macro	line:14
+status	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define status	/;"	macro	line:15
+usr_id	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define usr_id	/;"	macro	line:16
+request	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define request	/;"	macro	line:17
+taddr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define taddr	/;"	macro	line:18
+data	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define data	/;"	macro	line:19
+sig_nr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_nr	/;"	macro	line:20
+sig_nsa	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_nsa	/;"	macro	line:21
+sig_osa	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_osa	/;"	macro	line:22
+sig_ret	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_ret	/;"	macro	line:23
+stat_nr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define stat_nr	/;"	macro	line:24
+sig_set	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_set	/;"	macro	line:25
+sig_how	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_how	/;"	macro	line:26
+sig_flags	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_flags	/;"	macro	line:27
+sig_context	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_context	/;"	macro	line:28
+sig_msg	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define sig_msg	/;"	macro	line:30
+info_what	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define info_what	/;"	macro	line:32
+info_where	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define info_where	/;"	macro	line:33
+reboot_flag	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reboot_flag	/;"	macro	line:34
+reboot_code	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reboot_code	/;"	macro	line:35
+reboot_strlen	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reboot_strlen	/;"	macro	line:36
+svrctl_req	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define svrctl_req	/;"	macro	line:37
+svrctl_argp	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define svrctl_argp	/;"	macro	line:38
+stime	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define stime /;"	macro	line:39
+memsize	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define memsize /;"	macro	line:40
+membase	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define membase /;"	macro	line:41
+reply_res	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_res	/;"	macro	line:44
+reply_res2	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_res2	/;"	macro	line:45
+reply_res3	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_res3	/;"	macro	line:46
+reply_ptr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_ptr	/;"	macro	line:47
+reply_mask	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_mask	/;"	macro	line:48
+reply_trace	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_trace	/;"	macro	line:49
+reply_time	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_time /;"	macro	line:50
+reply_utime	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_utime /;"	macro	line:51
+reply_t1	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_t1 /;"	macro	line:52
+reply_t2	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_t2 /;"	macro	line:53
+reply_t3	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_t3 /;"	macro	line:54
+reply_t4	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_t4 /;"	macro	line:55
+reply_t5	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define reply_t5 /;"	macro	line:56
+tell_fs_arg1	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define tell_fs_arg1 /;"	macro	line:59
+tell_fs_arg2	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define tell_fs_arg2 /;"	macro	line:60
+tell_fs_arg3	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/param.h	/^#define tell_fs_arg3 /;"	macro	line:61
+_POSIX_SOURCE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/pm.h	/^#define _POSIX_SOURCE /;"	macro	line:4
+_MINIX	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/pm.h	/^#define _MINIX /;"	macro	line:5
+_SYSTEM	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/pm.h	/^#define _SYSTEM /;"	macro	line:6
+swap_in	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/proto.h	/^#define swap_in(/;"	macro	line:20
+swap_inqueue	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/proto.h	/^#define swap_inqueue(/;"	macro	line:21
+CORE_MODE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^#define CORE_MODE	/;"	macro	line:35	file:
+DUMPED	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^#define DUMPED /;"	macro	line:36	file:
+do_sigaction	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_sigaction()$/;"	function	line:46
+do_sigpending	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_sigpending()$/;"	function	line:99
+do_sigprocmask	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_sigprocmask()$/;"	function	line:108
+do_sigsuspend	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_sigsuspend()$/;"	function	line:163
+do_sigreturn	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_sigreturn()$/;"	function	line:176
+do_kill	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_kill()$/;"	function	line:195
+ksig_pending	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int ksig_pending()$/;"	function	line:205
+handle_ksig	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PRIVATE void handle_ksig(proc_nr_e, sig_map)$/;"	function	line:246
+do_alarm	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_alarm()$/;"	function	line:292
+set_alarm	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int set_alarm(proc_nr_e, sec)$/;"	function	line:301
+cause_sigalrm	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PRIVATE void cause_sigalrm(tp)$/;"	function	line:363
+do_pause	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int do_pause()$/;"	function	line:387
+sig_proc	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC void sig_proc(rmp, signo)$/;"	function	line:398
+check_sig	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC int check_sig(proc_id, signo)$/;"	function	line:525
+check_pending	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PUBLIC void check_pending(rmp)$/;"	function	line:592
+unpause	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PRIVATE void unpause(pro)$/;"	function	line:621
+dump_core	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/signal.c	/^PRIVATE void dump_core(rmp)$/;"	function	line:649
+_TABLE	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/table.c	/^#define _TABLE$/;"	macro	line:5	file:
+core_name	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/table.c	/^char core_name[] = "core";	\/* file name where core images are produced *\/$/;"	variable	line:14
+boottime	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/time.c	/^PRIVATE time_t boottime;$/;"	variable	line:16
+do_time	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/time.c	/^PUBLIC int do_time()$/;"	function	line:21
+do_stime	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/time.c	/^PUBLIC int do_stime()$/;"	function	line:42
+do_times	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/time.c	/^PUBLIC int do_times()$/;"	function	line:67
+pm_timers	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/timers.c	/^PRIVATE timer_t *pm_timers = NULL;$/;"	variable	line:22
+pm_set_timer	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/timers.c	/^PUBLIC void pm_set_timer(timer_t *tp, int ticks, tmr_func_t watchdog, int arg)$/;"	function	line:27	signature:(timer_t *tp, int ticks, tmr_func_t watchdog, int arg)
+pm_expire_timers	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/timers.c	/^PUBLIC void pm_expire_timers(clock_t now)$/;"	function	line:51	signature:(clock_t now)
+pm_cancel_timer	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/timers.c	/^PUBLIC void pm_cancel_timer(timer_t *tp)$/;"	function	line:66	signature:(timer_t *tp)
+NIL_MPROC	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/trace.c	/^#define NIL_MPROC	/;"	macro	line:30	file:
+do_trace	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/trace.c	/^PUBLIC int do_trace()$/;"	function	line:37
+find_proc	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/trace.c	/^PRIVATE struct mproc *find_proc(lpid)$/;"	function	line:82
+stop_proc	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/trace.c	/^PUBLIC void stop_proc(rmp, signo)$/;"	function	line:95
+get_free_pid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC pid_t get_free_pid()$/;"	function	line:36
+allowed	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC int allowed(name_buf, s_buf, mask)$/;"	function	line:58
+no_sys	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC int no_sys()$/;"	function	line:97
+panic	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC void panic(who, mess, num)$/;"	function	line:107
+tell_fs	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC void tell_fs(what, p1, p2, p3)$/;"	function	line:132
+find_param	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC char *find_param(name)$/;"	function	line:161
+get_mem_map	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC int get_mem_map(proc_nr, mem_map)$/;"	function	line:181
+get_stack_ptr	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC int get_stack_ptr(proc_nr_e, sp)$/;"	function	line:197
+proc_from_pid	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC int proc_from_pid(mp_pid)$/;"	function	line:213
+pm_isokendpt	/Users/justindowns/Dropbox/NPS/Class Material/Operating Systems/Labs/Lab1/r3_1_2a_cds/src/servers/pm/utility.c	/^PUBLIC int pm_isokendpt(int endpoint, int *proc)$/;"	function	line:228	signature:(int endpoint, int *proc)
